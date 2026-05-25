@@ -46,37 +46,33 @@ export default function App() {
 
       {/* Hero */}
       <section id="home" className="mx-auto max-w-5xl px-4 pt-16 pb-10">
-        <FadeIn>
-          <p className="text-xs uppercase tracking-widest text-neutral-400">Portfolio</p>
-          <h1 className="mt-2 text-4xl sm:text-6xl font-extrabold leading-tight">{DATA.name}</h1>
-          <h2 className="mt-2 text-xl sm:text-2xl text-neutral-300">{DATA.title}</h2>
-          <p className="mt-4 max-w-2xl text-neutral-300">{DATA.tagline}</p>
-          <div className="mt-5 flex flex-wrap items-center gap-3">
-            <span className="px-3 py-1 rounded-xl bg-white/10 text-white inline-flex items-center gap-2 text-sm"><MapPin className="h-4 w-4"/>{DATA.location}</span>
-            <a className="rounded-xl bg-white text-black px-3 py-1 text-sm" href={`mailto:${DATA.email}`}><Mail className="inline h-4 w-4 mr-1"/>Email</a>
-            <a className="rounded-xl border border-white/10 px-3 py-1 text-sm" href={DATA.github} target="_blank" rel="noreferrer"><Github className="inline h-4 w-4 mr-1"/>GitHub</a>
-            <a className="rounded-xl border border-white/10 px-3 py-1 text-sm" href={DATA.linkedin} target="_blank" rel="noreferrer"><Linkedin className="inline h-4 w-4 mr-1"/>LinkedIn</a>
-          </div>
-        </FadeIn>
-      </section>
+        <div className="grid md:grid-cols-[1.4fr_0.6fr] gap-8 items-center">
+          <FadeIn>
+            <p className="text-xs uppercase tracking-widest text-neutral-400">Portfolio</p>
+            <h1 className="mt-2 text-4xl sm:text-6xl font-extrabold leading-tight">{DATA.name}</h1>
+            <h2 className="mt-2 text-xl sm:text-2xl text-neutral-300">{DATA.title}</h2>
+            <p className="mt-4 max-w-2xl text-neutral-300">{DATA.tagline}</p>
+            <div className="mt-5 flex flex-wrap items-center gap-3">
+              <span className="px-3 py-1 rounded-xl bg-white/10 text-white inline-flex items-center gap-2 text-sm"><MapPin className="h-4 w-4"/>{DATA.location}</span>
+              <a className="rounded-xl bg-white text-black px-3 py-1 text-sm" href={`mailto:${DATA.email}`}><Mail className="inline h-4 w-4 mr-1"/>Email</a>
+              <a className="rounded-xl border border-white/10 px-3 py-1 text-sm" href={DATA.github} target="_blank" rel="noreferrer"><Github className="inline h-4 w-4 mr-1"/>GitHub</a>
+              <a className="rounded-xl border border-white/10 px-3 py-1 text-sm" href={DATA.linkedin} target="_blank" rel="noreferrer"><Linkedin className="inline h-4 w-4 mr-1"/>LinkedIn</a>
+              <a className="rounded-xl border border-white/10 px-3 py-1 text-sm" href={DATA.resumeUrl} target="_blank" rel="noreferrer"><FileText className="inline h-4 w-4 mr-1"/>Resume</a>
+            </div>
+          </FadeIn>
 
-      {/* About */}
-      <Section id="about" title="About" icon={<BookOpen className="h-6 w-6 text-white/80"/>}>
-        <FadeIn>
-          <p className="text-neutral-300 leading-relaxed max-w-3xl">{DATA.about}</p>
-        </FadeIn>
-        <div className="grid sm:grid-cols-2 gap-4 mt-6">
-          {DATA.education.map((ed, i) => (
-            <FadeIn key={i} delay={0.05 * (i + 1)}>
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
-                <div className="text-white/90 font-medium">{ed.degree}</div>
-                <div className="text-neutral-300">{ed.org}</div>
-                <div className="text-neutral-400 text-sm mt-1">{ed.meta}</div>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
-      </Section>
+          <FadeIn delay={0.15}>
+            <div className="mx-auto w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden border border-white/10 bg-white/5 shadow-2xl">
+              <img
+                src={DATA.photoUrl}
+                alt="Jithin Shaji"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </FadeIn>
+       </div>
+      </section>
+      */
 
       {/* Experience */}
       <Section id="experience" title="Experience" icon={<Settings className="h-6 w-6 text-white/80"/>}>
