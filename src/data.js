@@ -1,4 +1,5 @@
-
+import profilePhoto from './profile.jpg'
+import resumePdf from './JITHIN_SHAJI_ROBOTICS_ENGINNER.pdf'
 export const DATA = {
   name: 'JITHIN SHAJI',
   title: 'Autonomous Robotics & AI Engineer',
@@ -8,8 +9,8 @@ export const DATA = {
   email: 'jithin.shaji.ec@gmail.com',
   github: 'https://github.com/jithin017',
   linkedin: 'https://www.linkedin.com/in/jithin-shaji-525255245',
-  resumeUrl: './JITHIN_SHAJI_ROBOTICS_ENGINNER.pdf',
-  photoUrl: './profile.jpg',
+  resumeUrl: resumePdf,
+  photoUrl: profilePhoto,
 
   nav: [
     { id: 'about', label: 'About' },

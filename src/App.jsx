@@ -72,7 +72,7 @@ export default function App() {
           </FadeIn>
        </div>
       </section>
-      */
+      
 
       {/* Experience */}
       <Section id="experience" title="Experience" icon={<Settings className="h-6 w-6 text-white/80"/>}>
