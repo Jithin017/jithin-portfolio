@@ -1,5 +1,11 @@
 import profilePhoto from './profile.jpg'
 import resumePdf from './JITHIN_SHAJI_ROBOTICS_ENGINNER.pdf'
+import bravo1 from './bravo1.jpg'
+import bravo2 from './bravo2.jpg'
+import bravo3 from './bravo3.jpg'
+import bravo4 from './bravo4.jpg'
+import bravo5 from './bravo5.jpg'
+import bravoVideo from './video/bravo.mp4'
 export const DATA = {
   name: 'JITHIN SHAJI',
   title: 'Autonomous Robotics & AI Engineer',
@@ -109,14 +115,8 @@ export const DATA = {
     {
       title: 'B.R.A.V.O — Biomedical Hospital Assistive Robot',
       year: '2025',
-      images: [
-        './bravo1.jpg',
-        './bravo2.jpg',
-        './bravo3.jpg',
-        './bravo4.jpg',
-        './bravo5.jpg'
-      ],
-      video: './video/bravo.mp4',
+      images: [bravo1, bravo2, bravo3, bravo4, bravo5],
+      video: bravoVideo,
       summary: 'Semi-autonomous biomedical robot for patient vital monitoring, smart triage, and indoor hospital navigation.',
       bullets: [
         'Integrated ROS 2, Raspberry Pi, LIDAR, IMU, and mecanum-wheel drive.',
