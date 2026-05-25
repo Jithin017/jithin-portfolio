@@ -107,6 +107,25 @@ export default function App() {
                   <div className="text-xs text-neutral-400">{p.year}</div>
                 </div>
                 <p className="text-sm text-neutral-300 mt-2">{p.summary}</p>
+                {p.images && (
+                  <div className="grid grid-cols-2 gap-2 mt-3">
+                    {p.images.map((img, idx) => (
+                      <img
+                        key={idx}
+                        src={img}
+                        alt={`${p.title}-${idx}`}
+                        className="w-full h-40 object-cover rounded-xl border border-white/10 hover:scale-[1.02] transition"
+                      />
+                  ))}
+                  </div>
+                )}
+
+                {p.video && (
+                  <video controls className="w-full rounded-xl mt-3 border border-white/10">
+                    <source src={p.video} type="video/mp4" />
+                  </video>
+                )}
+                
                 <ul className="list-disc ml-5 mt-3 text-sm space-y-2">
                   {p.bullets?.map((b, j) => <li key={j}>{b}</li>)}
                 </ul>

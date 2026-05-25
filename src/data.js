@@ -34,7 +34,7 @@ export const DATA = {
     {
       role: 'Robot / Motion Control Programming Intern',
       org: 'Interface Design Associates Pvt. Ltd., Navi Mumbai',
-      period: 'Jan 2026 – Apr 2026',
+      period: 'Jan 2026 – Jun 2026',
       points: [
         'Compiled and customized FreeCAD by developing UI and backend modules for a robotics/CNC workbench.',
         'Implemented coordinate transformation and toolpath computation algorithms converting STL/G-code into robot motion commands.',
@@ -109,6 +109,14 @@ export const DATA = {
     {
       title: 'B.R.A.V.O — Biomedical Hospital Assistive Robot',
       year: '2025',
+      images: [
+        './bravo1.jpg',
+        './bravo2.jpg',
+        './bravo3.jpg',
+        './bravo4.jpg',
+        './bravo5.jpg'
+      ],
+      video: './video/bravo.mp4',
       summary: 'Semi-autonomous biomedical robot for patient vital monitoring, smart triage, and indoor hospital navigation.',
       bullets: [
         'Integrated ROS 2, Raspberry Pi, LIDAR, IMU, and mecanum-wheel drive.',
